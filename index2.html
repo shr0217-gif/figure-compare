@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figure Compare</title>
+
+<style>
+body{
+    font-family:sans-serif;
+    margin:0;
+    background:#f5f5f5;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+h2{
+    margin-top:40px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.2s;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Figure Compare</h1>
+    <p>フィギュア価格比較サイト</p>
+</header>
+
+<div class="container">
+
+<h2>少年ジャンプ</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+🦸‍♂️<br>
+僕のヒーローアカデミア
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+🏴‍☠️<br>
+ワンピース
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+🐉<br>
+ドラゴンボール
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+⚔️<br>
+鬼滅の刃
+</div>
+</a>
+
+</div>
+
+<h2>ゲーム</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+🎓<br>
+ブルーアーカイブ
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+🌎<br>
+原神
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+🚂<br>
+崩壊：スターレイル
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+⭐<br>
+Fate
+</div>
+</a>
+
+</div>
+
+<h2>VTuber</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+🏴‍☠️<br>
+ホロライブ
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+🌈<br>
+にじさんじ
+</div>
+</a>
+
+</div>
+
+<h2>その他</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+🎤<br>
+初音ミク
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+✨<br>
+東方Project
+</div>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
