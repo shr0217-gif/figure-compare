@@ -8,124 +8,168 @@
 <style>
 body{
     font-family:sans-serif;
-    background:#f5f5f5;
     margin:0;
+    background:#f5f5f5;
 }
 
 header{
     background:#2563eb;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:30px;
 }
 
 .container{
-    max-width:900px;
+    max-width:1200px;
     margin:auto;
     padding:20px;
 }
 
-.search-box{
-    display:flex;
-    gap:10px;
-    margin-bottom:30px;
+h2{
+    margin-top:40px;
 }
 
-input{
-    flex:1;
-    padding:12px;
-    border:1px solid #ccc;
-    border-radius:8px;
-}
-
-button{
-    padding:12px 20px;
-    border:none;
-    background:#2563eb;
-    color:white;
-    border-radius:8px;
-    cursor:pointer;
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:20px;
 }
 
 .card{
     background:white;
-    padding:20px;
-    border-radius:12px;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.2s;
+    cursor:pointer;
 }
 
-table{
-    width:100%;
-    border-collapse:collapse;
+.card:hover{
+    transform:translateY(-5px);
 }
 
-th,td{
-    padding:12px;
-    border-bottom:1px solid #ddd;
-    text-align:left;
-}
-
-.lowest{
-    color:#e11d48;
-    font-weight:bold;
+a{
+    text-decoration:none;
+    color:black;
 }
 </style>
-
 </head>
+
 <body>
 
 <header>
-<h1>Figure Compare</h1>
-<p>フィギュア価格比較サイト</p>
+    <h1>Figure Compare</h1>
+    <p>フィギュア価格比較サイト</p>
 </header>
 
 <div class="container">
 
-<div class="search-box">
-<input type="text" placeholder="フィギュア名を検索">
-<button>検索</button>
+<h2>少年ジャンプ</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+🦸‍♂️<br>
+僕のヒーローアカデミア
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+🏴‍☠️<br>
+ワンピース
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+🐉<br>
+ドラゴンボール
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+⚔️<br>
+鬼滅の刃
+</div>
+</a>
+
 </div>
 
+<h2>ゲーム</h2>
+
+<div class="grid">
+
+<a href="#">
 <div class="card">
-<h2>ねんどろいど 博麗霊夢</h2>
+🎓<br>
+ブルーアーカイブ
+</div>
+</a>
 
-<p>
-最安値：
-<span class="lowest">¥5,980</span>
-</p>
+<a href="#">
+<div class="card">
+🌎<br>
+原神
+</div>
+</a>
 
-<table>
-<tr>
-<th>店舗</th>
-<th>価格</th>
-<th>在庫</th>
-</tr>
+<a href="#">
+<div class="card">
+🚂<br>
+崩壊：スターレイル
+</div>
+</a>
 
-<tr>
-<td>駿河屋</td>
-<td>¥5,980</td>
-<td>〇</td>
-</tr>
+<a href="#">
+<div class="card">
+⭐<br>
+Fate
+</div>
+</a>
 
-<tr>
-<td>あみあみ</td>
-<td>¥6,280</td>
-<td>〇</td>
-</tr>
+</div>
 
-<tr>
-<td>Amazon</td>
-<td>¥6,800</td>
-<td>〇</td>
-</tr>
+<h2>VTuber</h2>
 
-<tr>
-<td>メルカリ</td>
-<td>¥5,500〜</td>
-<td>△</td>
-</tr>
+<div class="grid">
 
-</table>
+<a href="#">
+<div class="card">
+🏴‍☠️<br>
+ホロライブ
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+🌈<br>
+にじさんじ
+</div>
+</a>
+
+</div>
+
+<h2>その他</h2>
+
+<div class="grid">
+
+<a href="#">
+<div class="card">
+🎤<br>
+初音ミク
+</div>
+</a>
+
+<a href="#">
+<div class="card">
+✨<br>
+東方Project
+</div>
+</a>
 
 </div>
 
@@ -133,40 +177,3 @@ th,td{
 
 </body>
 </html>
-
-<div class="card">
-<h2>POP UP PARADE 初音ミク</h2>
-
-<p>
-最安値：
-<span class="lowest">¥4,980</span>
-</p>
-
-<table>
-<tr>
-<th>店舗</th>
-<th>価格</th>
-<th>在庫</th>
-</tr>
-
-<tr>
-<td>駿河屋</td>
-<td>¥4,980</td>
-<td>〇</td>
-</tr>
-
-<tr>
-<td>あみあみ</td>
-<td>¥5,280</td>
-<td>〇</td>
-</tr>
-
-<tr>
-<td>Amazon</td>
-<td>¥5,500</td>
-<td>〇</td>
-</tr>
-
-</table>
-
-</div>
