@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figure Compare</title>
+
+<style>
+body{
+    font-family:sans-serif;
+    background:#f5f5f5;
+    margin:0;
+}
+
+header{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+button{
+    padding:12px 20px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    border-bottom:1px solid #ddd;
+    text-align:left;
+}
+
+.lowest{
+    color:#e11d48;
+    font-weight:bold;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Figure Compare</h1>
+<p>フィギュア価格比較サイト</p>
+</header>
+
+<div class="container">
+
+<div class="search-box">
+<input type="text" placeholder="フィギュア名を検索">
+<button>検索</button>
+</div>
+
+<div class="card">
+<h2>ねんどろいど 博麗霊夢</h2>
+
+<p>
+最安値：
+<span class="lowest">¥5,980</span>
+</p>
+
+<table>
+<tr>
+<th>店舗</th>
+<th>価格</th>
+<th>在庫</th>
+</tr>
+
+<tr>
+<td>駿河屋</td>
+<td>¥5,980</td>
+<td>〇</td>
+</tr>
+
+<tr>
+<td>あみあみ</td>
+<td>¥6,280</td>
+<td>〇</td>
+</tr>
+
+<tr>
+<td>Amazon</td>
+<td>¥6,800</td>
+<td>〇</td>
+</tr>
+
+<tr>
+<td>メルカリ</td>
+<td>¥5,500〜</td>
+<td>△</td>
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</body>
+</html>
+
+<div class="card">
+<h2>POP UP PARADE 初音ミク</h2>
+
+<p>
+最安値：
+<span class="lowest">¥4,980</span>
+</p>
+
+<table>
+<tr>
+<th>店舗</th>
+<th>価格</th>
+<th>在庫</th>
+</tr>
+
+<tr>
+<td>駿河屋</td>
+<td>¥4,980</td>
+<td>〇</td>
+</tr>
+
+<tr>
+<td>あみあみ</td>
+<td>¥5,280</td>
+<td>〇</td>
+</tr>
+
+<tr>
+<td>Amazon</td>
+<td>¥5,500</td>
+<td>〇</td>
+</tr>
+
+</table>
+
+</div>
